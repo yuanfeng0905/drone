@@ -632,6 +632,12 @@
 			"revisionTime": "2019-01-25T20:52:35Z"
 		},
 		{
+			"checksumSHA1": "EL9nDPWoRPePnjwUuF2eo8gWYOw=",
+			"path": "github.com/drone/go-login/login/coding",
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
+		},
+		{
 			"checksumSHA1": "99J7FSWhRUMK/oL3YJgYFxR+Dbc=",
 			"path": "github.com/drone/go-login/login/github",
 			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",

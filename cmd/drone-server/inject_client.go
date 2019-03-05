@@ -220,12 +220,13 @@ func provideCodingClient(config config.Config) *scm.Client {
 		logrus.WithError(err).
 			Fatalln("main: cannot create the Coding client")
 	}
+
 	if config.Coding.Debug {
 		client.DumpResponse = httputil.DumpResponse
 	}
+
 	client.Client = &http.Client{
 		Transport: &oauth2.Transport{
-			Scheme: oauth2.SchemeToken,
 			Source: oauth2.ContextTokenSource(),
 			Base:   defaultTransport(config.Coding.SkipVerify),
 		},
