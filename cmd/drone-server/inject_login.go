@@ -18,10 +18,12 @@ import (
 	"github.com/drone/drone/cmd/drone-server/config"
 	"github.com/drone/go-login/login"
 	"github.com/drone/go-login/login/bitbucket"
+	"github.com/drone/go-login/login/coding"
 	"github.com/drone/go-login/login/github"
 	"github.com/drone/go-login/login/gitlab"
 	"github.com/drone/go-login/login/gogs"
 	"github.com/drone/go-login/login/stash"
+
 	"github.com/drone/go-scm/scm/transport/oauth2"
 
 	"github.com/google/wire"
@@ -50,6 +52,8 @@ func provideLogin(config config.Config) login.Middleware {
 		return provideGogsLogin(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashLogin(config)
+	case config.Coding.Server != "":
+		return provideCodingLogin(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
 	return nil
@@ -146,6 +150,25 @@ func provideStashLogin(config config.Config) login.Middleware {
 		PrivateKey:     privateKey,
 		CallbackURL:    config.Server.Addr + "/login",
 		Client:         defaultClient(config.Stash.SkipVerify),
+	}
+}
+
+// provideCodingLogin is a Wire provider function that returns
+// a Coding autenticator based on the environment configuration.
+func provideCodingLogin(config config.Config) login.Middleware {
+	if config.Coding.Server == "" {
+		return nil
+	}
+
+	return &coding.Config{
+		ClientID:     config.Coding.ClientID,
+		ClientSecret: config.Coding.ClientSecret,
+		RedirectURL:  config.Server.Addr + "/login",
+		Server:       config.Coding.Server,
+		Scope:        config.Coding.Scope,
+		Debug:        config.Coding.Debug,
+		Logger:       logrus.StandardLogger(),
+		Client:       defaultClient(config.Coding.SkipVerify),
 	}
 }
 

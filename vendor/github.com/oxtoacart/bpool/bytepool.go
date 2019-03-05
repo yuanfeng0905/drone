@@ -31,13 +31,8 @@ func (bp *BytePool) Get() (b []byte) {
 
 // Put returns the given Buffer to the BytePool.
 func (bp *BytePool) Put(b []byte) {
-	if cap(b) < bp.w {
-		// someone tried to put back a too small buffer, discard it
-		return
-	}
-
 	select {
-	case bp.c <- b[:bp.w]:
+	case bp.c <- b:
 		// buffer went back into pool
 	default:
 		// buffer didn't go back into pool, just discard

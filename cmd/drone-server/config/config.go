@@ -79,6 +79,7 @@ type (
 		GitLab    GitLab
 		Gogs      Gogs
 		Stash     Stash
+		Coding    Coding
 	}
 
 	// Cloning provides the cloning configuration.
@@ -326,6 +327,16 @@ type (
 		PrivateKey     string `envconfig:"DRONE_STASH_PRIVATE_KEY"`
 		SkipVerify     bool   `envconfig:"DRONE_STASH_SKIP_VERIFY"`
 		Debug          bool   `envconfig:"DRONE_STASH_DEBUG"`
+	}
+
+	// Coding provides the stash client configuration.
+	Coding struct {
+		Server       string   `envconfig:"DRONE_CODING_SERVER"`
+		ClientID     string   `envconfig:"DRONE_CODING_CLIENT_ID"`
+		ClientSecret string   `envconfig:"DRONE_CODING_CLIENT_SECRET"`
+		Scope        []string `envconfig:"DRONE_CODING_SCOPE" default:"project,project:depot,user:email"`
+		SkipVerify   bool     `envconfig:"DRONE_CODING_SKIP_VERIFY"`
+		Debug        bool     `envconfig:"DRONE_CODING_DEBUG"`
 	}
 
 	// S3 provides the storage configuration.

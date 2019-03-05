@@ -26,11 +26,13 @@ import (
 	"github.com/drone/drone/cmd/drone-server/config"
 	"github.com/drone/go-scm/scm"
 	"github.com/drone/go-scm/scm/driver/bitbucket"
+	"github.com/drone/go-scm/scm/driver/coding"
 	"github.com/drone/go-scm/scm/driver/gitea"
 	"github.com/drone/go-scm/scm/driver/github"
 	"github.com/drone/go-scm/scm/driver/gitlab"
 	"github.com/drone/go-scm/scm/driver/gogs"
 	"github.com/drone/go-scm/scm/driver/stash"
+
 	"github.com/drone/go-scm/scm/transport/oauth1"
 	"github.com/drone/go-scm/scm/transport/oauth2"
 
@@ -60,6 +62,8 @@ func provideClient(config config.Config) *scm.Client {
 		return provideGogsClient(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashClient(config)
+	case config.Coding.Server != "":
+		return provideCodingClient(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
 	return nil
@@ -203,6 +207,27 @@ func provideStashClient(config config.Config) *scm.Client {
 			PrivateKey:  privateKey,
 			Source:      oauth1.ContextTokenSource(),
 			Base:        defaultTransport(config.Stash.SkipVerify),
+		},
+	}
+	return client
+}
+
+// provideCodingClient is a Wire provider function that returns
+// a Coding client based on the environment configuration.
+func provideCodingClient(config config.Config) *scm.Client {
+	client, err := coding.New(config.Coding.Server)
+	if err != nil {
+		logrus.WithError(err).
+			Fatalln("main: cannot create the Coding client")
+	}
+	if config.Coding.Debug {
+		client.DumpResponse = httputil.DumpResponse
+	}
+	client.Client = &http.Client{
+		Transport: &oauth2.Transport{
+			Scheme: oauth2.SchemeToken,
+			Source: oauth2.ContextTokenSource(),
+			Base:   defaultTransport(config.Coding.SkipVerify),
 		},
 	}
 	return client

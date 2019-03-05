@@ -155,6 +155,10 @@ func HandleLogin(
 		logger.Debugf("authentication successful")
 
 		session.Create(w, user)
+		logger.Debugf("----------------------------")
+		logger.Debugf("%V", user)
+		logger.Debugf("----------------------------")
+
 		http.Redirect(w, r, "/", 303)
 	}
 }

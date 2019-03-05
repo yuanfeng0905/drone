@@ -125,9 +125,13 @@ func (s Server) Handler() http.Handler {
 	h := http.FileServer(dist.New())
 	h = setupCache(h)
 	r.Handle("/favicon.png", h)
-	r.Handle("/js/*filepath", h)
-	r.Handle("/css/*filepath", h)
-	r.Handle("/static2/*filepath", h2)
+	// r.Handle("/js/*filepath", h)
+	// r.Handle("/css/*filepath", h)
+	// r.Handle("/static2/*filepath", h2)
+	r.Handle("/js/*", h)
+	r.Handle("/css/*", h)
+	r.Handle("/static/*", h)
+	r.Handle("/static2/*", h2)
 	r.NotFound(HandleIndex(s.Host, s.Session, s.Licenses))
 
 	return r

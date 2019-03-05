@@ -58,6 +58,7 @@ func main() {
 	if logrus.IsLevelEnabled(logrus.TraceLevel) {
 		fmt.Println(config.String())
 	}
+	logrus.Infoln(config)
 
 	app, err := InitializeApplication(config)
 	if err != nil {
