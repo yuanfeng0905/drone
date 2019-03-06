@@ -62,7 +62,7 @@ func provideClient(config config.Config) *scm.Client {
 		return provideGogsClient(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashClient(config)
-	case config.Coding.Server != "":
+	case config.Coding.ClientID != "":
 		return provideCodingClient(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
@@ -222,6 +222,7 @@ func provideCodingClient(config config.Config) *scm.Client {
 	}
 
 	if config.Coding.Debug {
+		client.DumpRequest = httputil.DumpRequest
 		client.DumpResponse = httputil.DumpResponse
 	}
 
