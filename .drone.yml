@@ -257,7 +257,7 @@ platform:
 
 steps:
 - name: server
-  image: plugins/manifest:1
+  image: plugins/manifest
   settings:
     auto_tag: true
     ignore_missing: true
@@ -271,14 +271,14 @@ steps:
     - push
     - tag
 
-- name: agent
-  image: plugins/manifest:1
+- name: controller
+  image: plugins/manifest
   settings:
     auto_tag: true
     ignore_missing: true
     password:
       from_secret: docker_password
-    spec: docker/manifest.agent.tmpl
+    spec: docker/manifest.controller.tmpl
     username:
       from_secret: docker_username
   when:
@@ -286,14 +286,14 @@ steps:
     - push
     - tag
 
-- name: controller
-  image: plugins/manifest:1
+- name: agent
+  image: plugins/manifest
   settings:
     auto_tag: true
     ignore_missing: true
     password:
       from_secret: docker_password
-    spec: docker/manifest.controller.tmpl
+    spec: docker/manifest.agent.tmpl
     username:
       from_secret: docker_username
   when:

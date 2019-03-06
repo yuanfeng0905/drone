@@ -43,7 +43,7 @@ local docker(name, image, os, arch) = {
 # a docker manifest to a docker remote registry.
 local manifest(name) = {
     name: name,
-    image: "plugins/manifest:1",
+    image: "plugins/manifest",
     settings: {
         auto_tag: true,
         ignore_missing: true,
@@ -101,8 +101,8 @@ local pipeline(name, os, arch) = {
         name: "manifest",
         steps: [
             manifest("server"),
-            manifest("agent"),
             manifest("controller"),
+            manifest("agent"),
         ],
         depends_on: [
           "linux-amd64",
