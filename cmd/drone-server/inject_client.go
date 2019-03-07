@@ -62,7 +62,7 @@ func provideClient(config config.Config) *scm.Client {
 		return provideGogsClient(config)
 	case config.Stash.ConsumerKey != "":
 		return provideStashClient(config)
-	case config.Coding.ClientID != "":
+	case config.Coding.Server != "":
 		return provideCodingClient(config)
 	}
 	logrus.Fatalln("main: source code management system not configured")
@@ -228,6 +228,7 @@ func provideCodingClient(config config.Config) *scm.Client {
 
 	client.Client = &http.Client{
 		Transport: &oauth2.Transport{
+			Scheme: oauth2.SchemeToken,
 			Source: oauth2.ContextTokenSource(),
 			Base:   defaultTransport(config.Coding.SkipVerify),
 		},

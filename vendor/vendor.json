@@ -622,14 +622,14 @@
 		{
 			"checksumSHA1": "svpKlDxThH60gQUusG55B/42MEs=",
 			"path": "github.com/drone/go-login/login",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "di2LS1yrusbgtuu5jMCnx3kkvs4=",
 			"path": "github.com/drone/go-login/login/bitbucket",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "EL9nDPWoRPePnjwUuF2eo8gWYOw=",
@@ -640,122 +640,122 @@
 		{
 			"checksumSHA1": "99J7FSWhRUMK/oL3YJgYFxR+Dbc=",
 			"path": "github.com/drone/go-login/login/github",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "1SSDzMPi7IuqWTMM38tvWF53wzI=",
 			"path": "github.com/drone/go-login/login/gitlab",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "LQbfn5P5SgIPVdM5+omr/CkCeZs=",
 			"path": "github.com/drone/go-login/login/gogs",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "zer/tkB5jpg2JUqFyBjgwuGcHoc=",
 			"path": "github.com/drone/go-login/login/internal/oauth1",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
-			"checksumSHA1": "l+XcSn/VMOxCGUs2h8eisQT00IQ=",
+			"checksumSHA1": "cvkdNF6c4b16THTc7i3EhlYyuHA=",
 			"path": "github.com/drone/go-login/login/internal/oauth2",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "acpGaYwxkPBZx8QSFfdYrlTYg2A=",
 			"path": "github.com/drone/go-login/login/logger",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
 			"checksumSHA1": "jssMn7rjb4LA0zRjTIecfSj7FDM=",
 			"path": "github.com/drone/go-login/login/stash",
-			"revision": "4c90a444586ec508960bf5badd9bf6ed81fd8a7e",
-			"revisionTime": "2019-01-25T20:52:35Z"
+			"revision": "10c9f4e29665c0970f68ad5e9fd2c1c25d8897a3",
+			"revisionTime": "2019-03-05T09:20:21Z"
 		},
 		{
-			"checksumSHA1": "BHURxv4UcCxflzcnwzLAQsz3skY=",
+			"checksumSHA1": "Aq1CpFhcs+t727EjoHjKEAtmnms=",
 			"path": "github.com/drone/go-scm/scm",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "RjMBkl2Cf0lT5n1QPY1ybV72hjo=",
 			"path": "github.com/drone/go-scm/scm/driver/bitbucket",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
-			"checksumSHA1": "iidQg2kHuEn9TTo+JeueAqz+ETY=",
+			"checksumSHA1": "b3oTCFA/7Ss/U8HaRZk3sdwoIqg=",
 			"path": "github.com/drone/go-scm/scm/driver/coding",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "ARC73m8XBBK4xXb68TZkE0x9Vhc=",
 			"path": "github.com/drone/go-scm/scm/driver/gitea",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "LJqoP5RubM1Qd2wvVDyj9Mv+UTA=",
 			"path": "github.com/drone/go-scm/scm/driver/github",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "V/6Z7w2lfkcbvUbgrv4tuoMrLt8=",
 			"path": "github.com/drone/go-scm/scm/driver/gitlab",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "mdqr2suAmLYTSU1qIGrYTgWT8ro=",
 			"path": "github.com/drone/go-scm/scm/driver/gogs",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "LxJbVPgW3u9AGlcqZbhxLbmcXAk=",
 			"path": "github.com/drone/go-scm/scm/driver/internal/hmac",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "cOLfPALXN8wRVIrCEsT8uG2p04I=",
 			"path": "github.com/drone/go-scm/scm/driver/internal/null",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "t23P8uAysA1Imp0vqprXFWjSCb0=",
 			"path": "github.com/drone/go-scm/scm/driver/stash",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "T0D6uFzDka/JjGKaRDtmHpRoDcg=",
 			"path": "github.com/drone/go-scm/scm/transport/internal",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "/7dxuTm+Az9pcQUl0Xn89PwW3sA=",
 			"path": "github.com/drone/go-scm/scm/transport/oauth1",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
-			"checksumSHA1": "i5to7HSyxghDCBF7IOB2Z2CIP5U=",
+			"checksumSHA1": "92DRTIg39AfqqRsE75kjPC/7cLs=",
 			"path": "github.com/drone/go-scm/scm/transport/oauth2",
-			"revision": "a1fc6baaa96c1e8909bdafeb88a108625002a080",
-			"revisionTime": "2019-03-04T10:51:05Z"
+			"revision": "05380c627de35fdd89feb4df127f601e20330950",
+			"revisionTime": "2019-03-05T13:28:34Z"
 		},
 		{
 			"checksumSHA1": "+iaf1N7CueJ0qKwMQCuDY7RCVPA=",

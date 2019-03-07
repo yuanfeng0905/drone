@@ -161,14 +161,11 @@ func provideCodingLogin(config config.Config) login.Middleware {
 	}
 
 	return &coding.Config{
-		ClientID:     config.Coding.ClientID,
-		ClientSecret: config.Coding.ClientSecret,
-		RedirectURL:  config.Server.Addr + "/login",
-		Server:       config.Coding.Server,
-		Scope:        config.Coding.Scope,
-		Debug:        config.Coding.Debug,
-		Logger:       logrus.StandardLogger(),
-		Client:       defaultClient(config.Coding.SkipVerify),
+		Server: config.Coding.Server,
+		Ticket: config.Coding.Ticket,
+		Debug:  config.Coding.Debug,
+		Logger: logrus.StandardLogger(),
+		Client: defaultClient(config.Coding.SkipVerify),
 	}
 }
 
