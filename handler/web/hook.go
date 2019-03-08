@@ -14,8 +14,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/drone/drone/logger"
 	"github.com/drone/drone/core"
+	"github.com/drone/drone/logger"
 	"github.com/drone/go-scm/scm"
 )
 
@@ -68,6 +68,7 @@ func HandleHook(
 
 		if hook == nil {
 			logrus.Debugf("webhook ignored")
+			w.WriteHeader(200)
 			return
 		}
 

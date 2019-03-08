@@ -18,7 +18,6 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
-	"net/http/httputil"
 	"os"
 	"strconv"
 	"strings"
@@ -77,12 +76,6 @@ type parser struct {
 }
 
 func (p *parser) Parse(req *http.Request, secretFunc func(string) string) (*core.Hook, *core.Repository, error) {
-	if debugPrintHook {
-		// if DRONE_DEBUG_DUMP_HOOK=true print the http.Request
-		// headers and body to stdout.
-		out, _ := httputil.DumpRequest(req, true)
-		os.Stderr.Write(out)
-	}
 
 	// callback function provides the webhook parser with
 	// a per-repository secret key used to verify the webhook
