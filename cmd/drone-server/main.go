@@ -59,7 +59,6 @@ func main() {
 	if logrus.IsLevelEnabled(logrus.TraceLevel) {
 		fmt.Println(config.String())
 	}
-	logrus.Infoln(config)
 
 	app, err := InitializeApplication(config)
 	if err != nil {
@@ -134,6 +133,8 @@ func main() {
 
 // helper funciton configures the logging.
 func initLogging(c config.Config) {
+	// debug模式下支持方法名
+	logrus.SetReportCaller(c.Logging.Debug)
 	if c.Logging.Debug {
 		logrus.SetLevel(logrus.DebugLevel)
 	}

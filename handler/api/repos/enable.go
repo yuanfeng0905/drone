@@ -75,7 +75,6 @@ func HandleEnable(
 				Debugln("api: cannot create or update hook")
 			return
 		}
-
 		err = repos.Activate(r.Context(), repo)
 		if err == core.ErrRepoLimit {
 			render.ErrorCode(w, err, 402)

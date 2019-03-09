@@ -156,8 +156,7 @@ func HandleLogin(
 
 		session.Create(w, user)
 
-		writeJSON(w, map[string]string{"hello": "world"}, 200)
-		//http.Redirect(w, r, "/", 303)
+		http.Redirect(w, r, "/", 303)
 	}
 }
 
