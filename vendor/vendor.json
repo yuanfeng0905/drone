@@ -115,6 +115,24 @@
 			"revisionTime": "2017-07-31T04:31:57Z"
 		},
 		{
+			"checksumSHA1": "KmjnydoAbofMieIWm+it5OWERaM=",
+			"path": "github.com/alecthomas/template",
+			"revision": "a0175ee3bccc567396460bf5acd36800cb10c49c",
+			"revisionTime": "2016-04-05T07:15:01Z"
+		},
+		{
+			"checksumSHA1": "3wt0pTXXeS+S93unwhGoLIyGX/Q=",
+			"path": "github.com/alecthomas/template/parse",
+			"revision": "a0175ee3bccc567396460bf5acd36800cb10c49c",
+			"revisionTime": "2016-04-05T07:15:01Z"
+		},
+		{
+			"checksumSHA1": "fCc3grA7vIxfBru7R3SqjcW+oLI=",
+			"path": "github.com/alecthomas/units",
+			"revision": "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a",
+			"revisionTime": "2015-10-22T06:55:26Z"
+		},
+		{
 			"checksumSHA1": "5gnBrB9ISzgkQe5rLOlFp2MqA/8=",
 			"path": "github.com/asaskevich/govalidator",
 			"revision": "f9ffefc3facfbe0caee3fea233cbb6e8208f4541",
@@ -458,6 +476,12 @@
 			"revisionTime": "2019-02-21T00:54:38Z"
 		},
 		{
+			"checksumSHA1": "49GAyBjrH1Riejx+HKmVv0E2fy0=",
+			"path": "github.com/drone/drone-runtime",
+			"revision": "3e821e2abea3c652667da4531b070bdf08e953e8",
+			"revisionTime": "2019-03-06T20:16:17Z"
+		},
+		{
 			"checksumSHA1": "Yb4dt3ksq3OWRPUuRRw6HZKvXH0=",
 			"path": "github.com/drone/drone-runtime/engine",
 			"revision": "8c5fd677e0e21ed52f46ef36bc0aaf612826f992",
@@ -494,10 +518,22 @@
 			"revisionTime": "2019-02-27T16:33:22Z"
 		},
 		{
+			"checksumSHA1": "SsUZh7CzOYeKEwAk5FM0pHaeS3U=",
+			"path": "github.com/drone/drone-runtime/runtime/term",
+			"revision": "3e821e2abea3c652667da4531b070bdf08e953e8",
+			"revisionTime": "2019-03-06T20:16:17Z"
+		},
+		{
 			"checksumSHA1": "lREjecob+Yk4QpOTNbQKrNvbVpI=",
 			"path": "github.com/drone/drone-ui/dist",
 			"revision": "e7597b5234814a2c2f2a7f489b631a76649c335a",
 			"revisionTime": "2018-04-18T21:33:36Z"
+		},
+		{
+			"checksumSHA1": "1LqqFe8krmz1/X3WZgA0uTzzCiY=",
+			"path": "github.com/drone/drone-yaml",
+			"revision": "199d1f022abb513e31004470ae02da9ead05ad63",
+			"revisionTime": "2019-03-13T21:24:47Z"
 		},
 		{
 			"checksumSHA1": "wsayh/0lBve7aMh1Pgf1kd61xzw=",
@@ -885,6 +921,12 @@
 			"revisionTime": "2018-10-16T16:26:27Z"
 		},
 		{
+			"checksumSHA1": "Ya+baVBU/RkXXUWD3LGFmGJiiIg=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "c2a7a6ca930a4cd0bc33a3f298eb71960732a3a7",
+			"revisionTime": "2019-03-12T13:58:54Z"
+		},
+		{
 			"checksumSHA1": "8zEXCBTpyOvsoOEPmLe8tTZvkXI=",
 			"path": "github.com/mattn/go-sqlite3",
 			"revision": "ad30583d8387ce8118f8605eaeb3b4f7b4ae0ee1",
@@ -1216,6 +1258,12 @@
 			"path": "google.golang.org/appengine/cloudsql",
 			"revision": "54a98f90d1c46b7731eb8fb305d2a321c30ef610",
 			"revisionTime": "2019-02-15T20:43:44Z"
+		},
+		{
+			"checksumSHA1": "sToCp8GThnMnsBzsHv+L/tBYQrQ=",
+			"path": "gopkg.in/alecthomas/kingpin.v2",
+			"revision": "947dcec5ba9c011838740e680966fd7087a71d0d",
+			"revisionTime": "2017-12-17T18:08:21Z"
 		},
 		{
 			"checksumSHA1": "pfQwQtWlFezJq0Viroa/L+v+yDM=",
